@@ -1,0 +1,66 @@
+.offer {
+  padding-top: 150px;
+  &-inner {
+    @include container;
+  }
+  &-wrap {
+    display: flex;
+    align-items: center;
+    padding-bottom: 120px;
+  }
+  &-title {
+    font-family: "georgia";
+    font-weight: bold;
+    font-size: 50px;
+    color: $accent;
+    width: 605px;
+    margin-right: 68px;
+    line-height: 157%;
+  }
+  &-text {
+    @include font;
+    width: 670px;
+    margin-left: 68px;
+  }
+
+  &-name {
+    display: block;
+    font-size: 24px;
+    color: $accent-black;
+    margin-bottom: 20px;
+  }
+}
+
+.offer-cards {
+  display: flex;
+  padding-bottom: 50px;
+  &__item {
+      width: 33.33%;
+      padding: 20px;
+      &.item-second {
+          margin-top: 200px;
+      }
+  }
+  &__number {
+      font-family: 'georgia';
+      font-size: 150px;
+      color: rgba(1, 153, 109, 0.2);
+      position: relative;
+      margin-bottom: 55px;
+  }
+  &__title {
+    font-family: 'georgia';
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    padding-left: 84px;
+    margin-top: -50px;
+  }
+  &__text {
+      @include font;
+      padding-top: 55px;
+      padding-bottom: 40px;
+      line-height: 150%;
+  }
+}

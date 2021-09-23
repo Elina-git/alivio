@@ -1,0 +1,51 @@
+.story {
+  background-color: #245852;
+
+  &-inner {
+    @include container;
+  }
+  &-wrap {
+    display: flex;
+    padding-top: 226px;
+    align-items: center;
+  }
+}
+
+.story-content {
+  &__title {
+    font-size: 50px;
+    font-family: "georgia";
+    color: #ffff;
+    font-weight: bold;
+    line-height: 80px;
+    padding-right: 30px;
+  }
+
+  &__text {
+    font-family: "georgia";
+    color: #ffff;
+    padding-top: 33px;
+    padding-bottom: 57px;
+    font-size: 25px;
+  }
+
+  &__btn {
+    padding: 20px 50px;
+  }
+}
+
+.video-block {
+  position: relative;
+}
+.video-preview {
+  width: 100%;
+}
+
+.video-preview__button {
+  position: absolute;
+  width: 80px;
+  z-index: 1;
+  top: 150px;
+  left: 285px;
+  cursor: pointer;
+}

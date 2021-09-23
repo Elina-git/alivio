@@ -1,0 +1,93 @@
+.header-inner {
+  @include container;
+}
+
+.header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav a {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 24px;
+  position: relative;
+  @include font;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: $accent-black;
+    transition: 0.3s;
+  }
+}
+
+.header-nav a:hover::after {
+    color: blue;
+    width: 100%;
+  }
+
+.header-nav li {
+  margin-right: 72px;
+}
+
+.logo-img {
+  margin-right: 172px;
+}
+
+.header-item {
+  margin-left: 180px;
+}
+
+.sign-in {
+  @include font;
+  text-decoration: none;
+  padding-right: 15px;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: 0.3s;
+  }
+}
+.sign-in:hover::after {
+  width: 55px;
+}
+
+.btn {
+  padding: 13px 50px;
+  border: none;
+  background-color: $accent;
+  color: #ffff;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 20px;
+  font-family: 'lato';
+  &:hover {
+    background-color: rgb(142, 224, 142);
+  }
+}
+
+
+

@@ -1,27 +1,31 @@
 .promo {
-  padding: 50px 0;
-  background-color: lightsteelblue;
-}
-
-.promo-inner {
-  margin: 0 auto;
-  width: 1024px;
-
-  @media (max-width: 1279px) {
-    width: auto;
-    max-width: 1024px;
+  background-image: url("../images/header-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  &_inner {
+    @include container;
   }
 }
 
-.promo-ttl {
-  font-size: $h1-fz-desktop;
-  font-weight: $h1-fw;
-
-  @media (max-width: 1279px) {
-    font-size: $h1-fz-tablet;
+.promo-content {
+  padding-top: 175px;
+  padding-bottom: 336px;
+  width: 440px;
+  &__title {
+    color: $accent;
+    font-size: 65px;
+    line-height: 75px;
+    font-family: "georgia";
+    font-weight: bold;
+    padding-bottom: 30px;
   }
-
-  @media (max-width: 669px) {
-    font-size: $h1-fz-mobile;
+  &__text {
+    @include font;
+    line-height: 31px;
+    margin-bottom: 50px;
   }
+}
+.promo-btn {
+  padding: 20px 50px;
 }

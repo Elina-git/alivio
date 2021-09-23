@@ -17,5 +17,8 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "hover.css": "^2.3.2"
   }
 }
