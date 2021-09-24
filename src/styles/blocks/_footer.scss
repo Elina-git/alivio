@@ -1,0 +1,30 @@
+.footer {
+    margin-top: 168px;
+    background-color: #245852;
+    padding-bottom: 144px;
+    &-inner {
+        @include container;
+    }
+    &-nav li {
+        list-style: none;
+        padding-top: 60px;
+        
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 25px;
+            font-family: 'lato';
+            line-height: 30px;
+            transition: .3s;
+            position: relative;
+            &:hover {
+                color: rgb(95, 253, 232);
+            }
+            
+        }
+    }
+
+    &-logo {
+        padding-top: 95px;
+    }
+}

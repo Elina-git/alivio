@@ -1,0 +1,77 @@
+.products {
+  padding-top: 120px;
+  &-inner {
+    @include container;
+  }
+  &-image {
+    display: block;
+    width: 640px;
+  }
+  &-wrap {
+    position: relative;
+    display: flex;
+  }
+}
+
+.products-card {
+  box-shadow: -2px 12px 5px 0px #c7c7c7;
+  width: 300px;
+  position: absolute;
+  text-align: center;
+  background-color: #fff;
+  bottom: -60px;
+  left: -60px;
+  border-radius: 5px;
+
+  &__title {
+    @include font;
+    font-size: 15px;
+    text-align: center;
+    line-height: 157%;
+    font-weight: bold;
+    color: #000;
+    padding-top: 22px;
+    &::after {
+      content: "";
+      background-color: #000;
+      width: 110px;
+      margin: 0 auto;
+      height: 1px;
+      display: block;
+    }
+  }
+
+  &__image {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  &__name {
+    @include font;
+    font-size: 15px;
+    text-align: center;
+  }
+  &__text {
+    font-family: "georgia";
+    font-weight: 700;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    text-align: start;
+    padding-left: 61px;
+  }
+
+  &__features {
+    padding-bottom: 30px;
+  }
+
+  &__features li {
+    list-style: none;
+    padding-top: 15px;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: start;
+    padding-left: 61px;
+  }
+}
