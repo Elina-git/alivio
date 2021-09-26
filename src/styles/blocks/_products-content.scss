@@ -1,5 +1,8 @@
 .products-content {
     margin-left: 86px;
+    @media (max-width: $mobile) {
+      margin-top: 100px;
+    }
   &__name {
     @include font;
     font-size: 25px;

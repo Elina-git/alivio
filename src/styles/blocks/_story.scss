@@ -9,10 +9,16 @@
     display: flex;
     padding-top: 226px;
     align-items: center;
+    @media (max-width: $mobile) {
+      display: block;
+    }
   }
 }
 
 .story-content {
+  @media (max-width: $mobile) {
+    text-align: center;
+  }
   &__title {
     font-size: 50px;
     font-family: "georgia";
@@ -47,6 +53,9 @@
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }
 .hvr-shutter-in-vertical:before {
   content: "";
@@ -78,6 +87,10 @@
 
 .video-block {
   position: relative;
+  @media (max-width: $mobile) {
+  display: flex;
+  flex-direction: column;
+  }
 }
 .video-preview {
   width: 100%;
@@ -90,4 +103,13 @@
   top: 150px;
   left: 285px;
   cursor: pointer;
+}
+
+.video-block__btn {
+  display: none;
+  @media (max-width: $mobile) {
+    margin-top: 20px;
+    display: block;
+    padding: 20px 50px;
+  }
 }

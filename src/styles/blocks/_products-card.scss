@@ -10,6 +10,9 @@
   &-wrap {
     position: relative;
     display: flex;
+    @media (max-width: $mobile) {
+      display: block;
+    }
   }
 }
 
@@ -22,6 +25,10 @@
   bottom: -60px;
   left: -60px;
   border-radius: 5px;
+  @media (max-width: $mobile) {
+    bottom: 405px;
+    left: 0px;
+  }
 
   &__title {
     @include font;

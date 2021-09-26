@@ -3,6 +3,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  @media (max-width: $mobile) {
+    background-position: top center;
+  }
   &_inner {
     @include container;
   }
@@ -12,6 +15,9 @@
   padding-top: 175px;
   padding-bottom: 336px;
   width: 440px;
+  @media (max-width: $mobile) {
+    padding-top: 100px;
+  }
   &__title {
     color: $accent;
     font-size: 65px;

@@ -16,6 +16,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .header-nav a {
@@ -52,6 +55,16 @@
 
 .header-item {
   margin-left: 180px;
+  @media (max-width: $mobile) {
+    margin-left: 100px;
+  }
+}
+
+.burger {
+  display: none;
+  @media (max-width: $mobile) {
+    display: inline-block;
+  }
 }
 
 .sign-in {
